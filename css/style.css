@@ -1,11 +1,11 @@
 #main-screen, #main-roulette {
     position: relative;
     width: 100%;
+    text-align: center;
 }
 
 /* Make the image responsive */
 #main-screen img {
-    width: 100%;
     height: auto;
 }
 
@@ -21,9 +21,11 @@
 .roulette_container {
     position: absolute;
     left: 725px;
-    top: 500px;
+    top: 370px;
     overflow: hidden;
-    height: 64px;
+    height: 100px;
+    border: 1px solid;
+    padding: 20px;
 }
 
 .btn-1 {
@@ -56,7 +58,7 @@
 
 .btn_container {
     position: absolute;
-    top: 450px;
+    top: 340px;
     left: 1500px;
     width: 150px;
 }
@@ -71,7 +73,7 @@ button.btn.btn-large {
 
 .customer {
     position: absolute;
-    top: 780px;
+    top: 550px;
     left: 35%;
     font-size: 30px;
     width: 660px;
@@ -118,4 +120,7 @@ div#info {
 }
 img#c-avatar {
     width: 100%;
+}
+img#main-gift {
+    height: 300px;
 }
