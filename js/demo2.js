@@ -3,9 +3,10 @@ let arrValue = "25251325AX";
 let values = [];
 let luckyName = "";
 let luckyOrderId = "";
+let luckyAvatar = "";
 $(function () {
     let spd = 30;
-    let dur = 10;
+    let dur = 0;
     let choice = -1;
     let p = {
 
@@ -49,6 +50,7 @@ $(function () {
         arrValue = customers[luckyNum]["orderid"].toUpperCase();
         luckyName = customers[luckyNum]["customername"];
         luckyOrderId = customers[luckyNum]["orderid"].toUpperCase();
+        luckyAvatar = customers[luckyNum]["avatar"];
         values = convertArray(arrValue.split(''));
         rouletter.roulette('start');
     });
@@ -99,9 +101,12 @@ $(function () {
 let showInfo = function () {
     $('#c-name').text(luckyName);
     $('#c-orderId').text(luckyOrderId);
+    console.log(luckyAvatar);
+    $('#c-avatar').attr('src',luckyAvatar);
 }
 let resetInfo = function () {
     $('#c-name').text("");
     $('#c-orderId').text("");
+    $('#c-avatar').text("");
 }
 

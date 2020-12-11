@@ -71,9 +71,11 @@ button.btn.btn-large {
 
 .customer {
     position: absolute;
-    top: 800px;
-    left: 36%;
-    font-size: 20px;
+    top: 780px;
+    left: 35%;
+    font-size: 30px;
+    width: 660px;
+    height: 200px;
 }
 
 .name {
@@ -104,4 +106,16 @@ span#c-orderId {
 }
 .deactive {
     opacity:0.5;
+}
+
+div#info {
+    width: 70%;
+    float: left;
+}
+.avatar {
+    width: 30%;
+    float: right;
+}
+img#c-avatar {
+    width: 100%;
 }
