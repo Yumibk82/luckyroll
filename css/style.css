@@ -11,7 +11,7 @@
 
 /* Style the button and place it in the middle of the container/image */
 #main-screen .btn {
-    position: absolute;
+    position: inherit;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     border: none;
@@ -95,8 +95,8 @@ span#c-orderId {
 }
 .home-btn {
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 700px;
+    left: 1700px;
     margin-left: 25px;
     margin-top: 25px;
     width: 100px;
@@ -131,9 +131,9 @@ img#main-gift {
     margin: auto;
 }
 select#select-gift {
-    width: 700px;
+    width: 500px;
     /*     height: 45px; */
-    font-size: 35px;
+    font-size: 25px;
     padding:10px;
     box-sizing:border-box;
 }
