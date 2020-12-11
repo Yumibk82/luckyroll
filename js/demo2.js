@@ -47,9 +47,10 @@ $(function () {
     $('.start').click(function () {
         resetInfo();
         let luckyNum = Math.floor(Math.random() * customers.length);
-        arrValue = customers[luckyNum]["orderid"].toUpperCase();
-        luckyName = customers[luckyNum]["customername"];
-        luckyOrderId = customers[luckyNum]["orderid"].toUpperCase();
+        console.log(customers[luckyNum]);
+        arrValue = 'MHIVA00'+customers[luckyNum]["matrungthuong"];
+        luckyName = customers[luckyNum]["tennhanvien"];
+        luckyOrderId = customers[luckyNum]["manhanvien"];
         luckyAvatar = customers[luckyNum]["avatar"];
         values = convertArray(arrValue.split(''));
         rouletter.roulette('start');
