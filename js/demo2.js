@@ -101,12 +101,11 @@ $(function () {
 let showInfo = function () {
     $('#c-name').text(luckyName);
     $('#c-orderId').text(luckyOrderId);
-    console.log(luckyAvatar);
     $('#c-avatar').attr('src',luckyAvatar);
 }
 let resetInfo = function () {
     $('#c-name').text("");
     $('#c-orderId').text("");
-    $('#c-avatar').text("");
+    $('#c-avatar').attr('src',"");
 }
 
