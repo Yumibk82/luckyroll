@@ -113,14 +113,26 @@ span#c-orderId {
 div#info {
     width: 70%;
     float: left;
+    text-align: left;
+    padding-left: 50px;
 }
 .avatar {
     width: 30%;
     float: right;
+    border-radius: 50%;
 }
 img#c-avatar {
     width: 100%;
 }
 img#main-gift {
     height: 300px;
+    display: block;
+    margin: auto;
+}
+select#select-gift {
+    width: 500px;
+    /*     height: 45px; */
+    font-size: 35px;
+    padding:10px;
+    box-sizing:border-box;
 }
